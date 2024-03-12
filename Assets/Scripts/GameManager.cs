@@ -1,11 +1,32 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
+
+
 {
+    public Text scoreText;
     public Player player;
+    
     public float respawnTime = 3.0f;
+    public float respawnInvulnerabilityTime = 3.0f;
 
     public int lives = 3;
+    public int score = 0;
+    
+
+
+
+    public void AsteroidDestroyed(Asteroid asteroid)
+    {
+        transform.position = asteroid.transform.position;
+         scoreText.text = score.ToString();
+    
+         this.score += 25;
+        
+
+        
+    }
 
     public void PlayerDied()
     {

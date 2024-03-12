@@ -233,12 +233,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d09309f9fabea949800ca39ab53dd55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreText: {fileID: 198865500}
   player: {fileID: 2053684175}
   respawnTime: 2
   respawnInvulnerabilityTime: 3
   lives: 3
   score: 0
-  scoreText: {fileID: 198865500}
 --- !u!4 &236490294
 Transform:
   m_ObjectHideFlags: 0
